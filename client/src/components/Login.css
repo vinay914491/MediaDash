@@ -1,0 +1,62 @@
+.FormCont
+{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+    align-items:center;
+    background: linear-gradient(360deg, #b21dac,#00aeff);
+
+    h1
+    {
+        color:#ffb100;
+        text-transform:uppercase;
+    }
+    form{
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+        background-color:#00aeff;
+        border-radius:2rem;
+        padding:3rem 5rem;
+        input{
+            background-color:transparent;
+            padding:1rem;
+            border:0.1rem solid #997af0;
+            border-radius:0.4rem;
+            color:black;
+            width:100%;
+            &:focus{
+                border:0.1rem solid #ffb100;
+                outline:none;
+            }
+        }
+        button
+        {
+            background-color:#ffb100;
+            border:none;
+            color:white;
+            padding:1rem 2rem;
+            cursor:pointer;
+            border-radius:0.4rem;
+            font-weight:bold;
+            text-transform:uppercase;
+            transition:0.5s ease-in-out;
+            &:hover{
+                background-color:#b21dac;
+            }
+        }
+        span{
+            color:white;
+            text-transform:uppercase;
+            a{
+                color:#b21dac;
+                text-decoration:none;
+                font-weight:bold;
+            }
+            
+        }
+    }
+}

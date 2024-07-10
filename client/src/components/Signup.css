@@ -1,0 +1,64 @@
+.FormContainer
+{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+    align-items:center;
+    background: linear-gradient(360deg, #dd0014, #ffb100);
+
+    h1{
+        color:#b21dac;
+        text-transform:uppercase;
+    }
+    form{
+        display:flex;
+        flex-direction:column;
+        gap:2rem;
+        background-color:#ffb100;
+        border-radius:2rem;
+        padding:3rem 5rem;
+        input{
+            background-color:transparent;
+            padding:1rem;
+            border:0.1rem solid #dd0014;
+            border-radius:0.4rem;
+
+            color:black;
+            width:100%;
+            font-size:1rem;
+            &:focus{
+                border:0.1rem solid #b21dac;
+                outline:none;
+            }
+        }
+        button
+        {
+            background-color:#b21dac;
+            border:none;
+            color:white;
+            padding:1rem 2rem;
+            cursor:pointer;
+            border-radius:0.4rem;
+            font-weight:bold;
+            text-transform:uppercase;
+            transition:0.5s ease-in-out;
+            &:hover{
+                background-color:#dd0014;
+            }
+        }
+        span
+        {
+            color:white;
+            text-transform:uppercase;
+            a{
+                color:	#dd0014;
+                text-decoration:none;
+                font-weight:bold;
+            }
+        }
+
+    }
+}
